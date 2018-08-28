@@ -7,6 +7,6 @@
     <th>Customer</th>
   </tr>
 
-  <%= render partial: 'order', collection: @orders.products, as: order %>
+  <%= render (@orders) || "No orders" %>
 
 </table>
