@@ -6,6 +6,8 @@
     <th>Price
     <th>Customer</th>  
   </tr>
+
+  <%= render partial: 'order', collection: @orders.products, as: order %>
   <% @orders.each do |order| %>
     <% order.products.each do |product| %>
       <tr>
